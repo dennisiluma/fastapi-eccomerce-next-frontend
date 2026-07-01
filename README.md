@@ -1,0 +1,1 @@
+# fastapi-eccomerce-next-frontend
