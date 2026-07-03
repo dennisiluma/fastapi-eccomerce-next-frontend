@@ -1,0 +1,195 @@
+
+.admin-register-container {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+}
+
+.admin-register-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.admin-header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.admin-header p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.error-alert {
+    background: #fee;
+    border-left: 4px solid #e74c3c;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.success-alert {
+    background: #e8f5e9;
+    border-left: 4px solid #27ae60;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.error-alert span,
+.success-alert span {
+    font-size: 1.2rem;
+}
+
+.error-alert p {
+    color: #c00;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.success-alert p {
+    color: #27ae60;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+.form-group input:disabled,
+.form-group select:disabled {
+    background: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.admin-register-btn {
+    padding: 0.875rem;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.admin-register-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.4);
+}
+
+.admin-register-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.admin-info {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.admin-info h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+}
+
+.admin-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-info ul li {
+    padding: 0.5rem 0;
+    color: #666;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.admin-info ul li:last-child {
+    border-bottom: none;
+}
+
+.admin-info ul li strong {
+    color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+    .admin-register-container {
+        padding: 1rem;
+    }
+
+    .admin-register-card {
+        padding: 1.5rem;
+    }
+
+    .admin-header h1 {
+        font-size: 1.5rem;
+    }
+}
